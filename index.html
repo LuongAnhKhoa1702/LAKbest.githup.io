@@ -1,64 +1,210 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang cá nhân - Lương Anh Khoa</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân - Lương Anh Khoa</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* CSS cho thẻ AUDIO được ẩn */
+        #bg-music {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1 class="fade-in">Xin chào, tôi là <span>Lương Anh Khoa</span></h1>
-      <p class="slide-up">Sinh viên CNTT - Hành trình học tập & phát triển</p>
-      <div class="buttons">
-        <a href="#about" class="btn">Về tôi</a>
-        <a href="#study" class="btn">Quá trình học tập</a>
-        <a href="#contact" class="btn">Liên hệ</a>
-      </div>
+<header>
+    <nav class="navbar">
+        <div class="logo">LAKhoaa</div>
+        
+        <ul class="nav-links">
+            <li><a href="#about">Home</a></li>
+            <li><a href="#personal-info">Information</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#gaming">Gaming</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#investment">Investment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="music-container">
+        <button id="music-toggle">
+            <i class="fas fa-music"></i> </button>
     </div>
-  </header>
+</header>
 
-  <!-- Về tôi -->
-  <section id="about" class="section">
-    <h2>👨‍💻 Về tôi</h2>
-    <p>Tôi là sinh viên công nghệ thông tin với niềm đam mê lập trình, học hỏi công nghệ mới và phát triển các dự án ứng dụng thực tế.</p>
-  </section>
+<audio id="bg-music" loop>
+    <source src="assets/Thu Cuối.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ audio.
+</audio>
 
-  <!-- Quá trình học tập -->
-  <section id="study" class="section dark">
-    <h2>📘 Quá trình học tập</h2>
+<section class="hero" id="about">
+    <div class="hero-content" data-aos="fade-up">
+        <div class="avatar-wrapper">
+            <img src="assets/myphoto.jpg" alt="myphoto" class="myphoto"> 
+        </div>
+        
+        <div class="title-wrapper">
+            <h1>Lương Anh Khoa</h1>
+            <h2><span id="typing"></span></h2>
+        </div>
+        
+        <p class="subtitle">Sinh viên CNTT tại HUTECH</p>
+        
+        <div class="socials">
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</section>
+
+<section id="personal-info" class="alt-bg">
+    <h2 data-aos="fade-up">👤 Thông tin Cá nhân</h2>
+    <div class="info-card-container">
+        <div class="info-card" data-aos="fade-right">
+            <h3>Biệt danh: Khoabest</h3>
+            <p><strong>Số CCCD:</strong> 086204010273</p>
+            <p><strong>Ngày sinh:</strong> 17/02/2004</p>
+            <p><strong>Quê quán:</strong> Trung Quốc </p>
+            <p><strong>Giới tính:</strong> Nam </p>
+            <p><strong>Quốc tịch:</strong> Việt Nam</p>
+           <p><strong>Hộ khẩu:</strong> Số Nhà 02, Hoài Thái Hiếu, Phường Long Châu, Tỉnh Vĩnh Long</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="education">
+    <h2 data-aos="fade-up">📚 Hành trình học tập</h2>
     <div class="timeline">
-      <div class="card fade-in">
-        <h3>Năm 1</h3>
-        <p>Học các môn đại cương, nhập môn lập trình, kỹ thuật lập trình...</p>
-      </div>
-      <div class="card fade-in">
-        <h3>Năm 2</h3>
-        <p>Nắm vững cấu trúc dữ liệu, cơ sở dữ liệu, phát triển phần mềm cơ bản...</p>
-      </div>
-      <div class="card fade-in">
-        <h3>Năm 3</h3>
-        <p>Phát triển web, trí tuệ nhân tạo, mạng máy tính, các dự án thực tế...</p>
-      </div>
-      <div class="card fade-in">
-        <h3>Năm 4</h3>
-        <p>Thực tập, làm đồ án tốt nghiệp, hoàn thiện kỹ năng và định hướng nghề nghiệp.</p>
-      </div>
+
+        <div class="timeline-item left" data-aos="fade-right">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>🏫 Tiểu học Hùng Vương</h3>
+                    <p class="location">📍 Vĩnh Long</p>
+                    <p class="years">📅 2010 – 2015</p>
+                </div>
+                <img src="assets/1.jpg" alt="Logo Tiểu học Hùng Vương" class="school-logo">
+            </div>
+        </div>
+        
+        <div class="timeline-item right" data-aos="fade-left">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>🏫 THCS Lê Quý Đôn</h3>
+                    <p class="location">📍 Vĩnh Long</p>
+                    <p class="years">📅 2015 – 2019</p>
+                </div>
+                <img src="assets/2.jpg" alt="Logo THCS Lê Quý Đôn" class="school-logo">
+            </div>
+        </div>
+        
+        <div class="timeline-item left" data-aos="fade-right">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>🏫 THPT Lưu Văn Liệt</h3>
+                    <p class="location">📍 Vĩnh Long</p>
+                    <p class="years">📅 2019 – 2022</p>
+                </div>
+                <img src="assets/3.jpg" alt="Logo THPT Lưu Văn Liệt" class="school-logo">
+            </div>
+        </div>
+        
+        <div class="timeline-item right" data-aos="fade-left">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>🎓 Đại học HUTECH</h3>
+                    <p class="location">📍 TP.HCM | Chuyên ngành CNTT</p>
+                    <p class="years">📅 2022 – nay</p>
+                </div>
+                <img src="assets/4.png" alt="Logo Đại học HUTECH" class="school-logo">
+            </div>
+        </div>
+        
     </div>
-  </section>
+</section>
 
-  <!-- Liên hệ -->
-  <section id="contact" class="section">
-    <h2>📩 Liên hệ</h2>
-    <p>Email: <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
-  </section>
+<section id="gaming">
+    <h2 data-aos="fade-up">🎮 Sở thích Gaming</h2>
+    <div class="card-container">
+        <div class="card" data-aos="zoom-in"><h3>LoL</h3><p>Chiến thuật cùng bạn bè</p></div>
+        <div class="card" data-aos="zoom-in"><h3>CS:GO</h3><p>Luyện phản xạ</p></div>
+        <div class="card" data-aos="zoom-in"><h3>War Thunder</h3><p>Trải nghiệm chiến trường</p></div>
+    </div>
+</section>
 
-  <footer>
-    <p>© 2025 - Trang cá nhân của bạn</p>
-  </footer>
+<section id="projects">
+    <h2 data-aos="fade-up">🔥 Projects</h2>
+    <div class="grid">
+        <div class="project-card" data-aos="flip-left"><h3>🌐 Website cá nhân</h3><p>Portfolio Full-stack</p></div>
+        <div class="project-card" data-aos="flip-left"><h3>📱 App Quản Lý</h3><p>Đa nền tảng, real-time</p></div>
+        <div class="project-card" data-aos="flip-left"><h3>🤖 AI Chatbot</h3><p>ML & NLP</p></div>
+        <div class="project-card" data-aos="flip-left"><h3>⚡ Blockchain Explorer</h3><p>Realtime + bảo mật</p></div>
+    </div>
+</section>
+
+<section id="investment" class="alt-bg">
+    <h2 data-aos="fade-up">💹 Phân bổ Danh mục Đầu tư</h2>
+    <div class="investment-content-wrapper"> 
+        <div class="card-container investment-cards"> 
+            <div class="card" data-aos="fade-up">
+                <h3>Phân bổ Tài sản</h3>
+                <p><strong>Crypto:</strong> 80%</p>
+                <p><strong>Khẩn cấp:</strong> 10%</p>
+                <p><strong>Tiết kiệm:</strong> 10%</p>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <h3>Chiến lược</h3>
+                <p>ĐÉO TIN THẰNG NÀO</p>
+                <p>I just trust myself</p>
+            </div>
+        </div>
+        <div class="chart-container" data-aos="zoom-out">
+            <canvas id="investmentChart"></canvas>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 data-aos="fade-up">Liên hệ</h2>
+    
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="mailto:luongkhoa1702@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok fa-2x"></i></a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Lương Anh Khoa | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+    // Parallax Effect for Hero Content
+    document.addEventListener('scroll', function() {
+        const heroContent = document.querySelector('.hero-content');
+        const scrollPosition = window.scrollY;
+        // Hiệu ứng Parallax nhẹ, chỉ áp dụng cho nội dung
+        heroContent.style.transform = 'translateY(' + scrollPosition * 0.25 + 'px)'; 
+    });
+
+    function toggleGrades(){
+        const t=document.getElementById("gradesTable");
+        t.style.display=(t.style.display==="none"||t.style.display==="")?"block":"none";
+    }
+    AOS.init({
+        duration: 1200, 
+        once: true
+    });
+</script>
 </body>
 </html>
