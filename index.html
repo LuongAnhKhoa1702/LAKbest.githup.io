@@ -44,6 +44,7 @@
 </audio>
 
 <section class="hero" id="about">
+    <canvas id="space-canvas"></canvas>
     <div class="hero-content" data-aos="fade-up">
         <div class="avatar-wrapper">
             <img src="assets/myphoto.jpg" alt="myphoto" class="myphoto"> 
@@ -65,21 +66,83 @@
 
 <section id="personal-info" class="alt-bg">
     <h2 data-aos="fade-up">👤 Thông tin Cá nhân</h2>
+    
+    <!-- Canvas MỚI cho nền Hiệu ứng CCCD -->
+    <canvas id="cccd-background-canvas"></canvas> 
+    
     <div class="info-card-container">
-        <div class="info-card" data-aos="fade-right">
-            <h3>Biệt danh: Khoabest</h3>
-            <p><strong>Số CCCD:</strong> 086204010273</p>
-            <p><strong>Ngày sinh:</strong> 17/02/2004</p>
-            <p><strong>Quê quán:</strong> Trung Quốc </p>
-            <p><strong>Giới tính:</strong> Nam </p>
-            <p><strong>Quốc tịch:</strong> Việt Nam</p>
-           <p><strong>Hộ khẩu:</strong> Số Nhà 02, Hoài Thái Hiếu, Phường Long Châu, Tỉnh Vĩnh Long</p>
+        <!-- Thẻ CCCD Mới -->
+        <div class="cccd-card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="cccd-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png" alt="Quốc huy" class="cccd-logo">
+                <h3 class="cccd-title">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h3>
+                <p class="cccd-subtitle">SOCIALIST REPUBLIC OF VIETNAM</p>
+            </div>
+            
+            <div class="cccd-body">
+                <div class="cccd-photo-placeholder">
+                    <p>ẢNH</p>
+                </div>
+                
+                <div class="cccd-details">
+                    <!-- Hàng 1: Số CCCD và Họ Tên -->
+                    <div class="detail-row">
+                        <div class="detail-item">
+                            <label>SỐ CCCD / ID CARD NO.</label>
+                            <p class="data-main">086204010273</p>
+                        </div>
+                        <div class="detail-item full-width">
+                            <label>HỌ VÀ TÊN / FULL NAME</label>
+                            <p class="data-main">LƯƠNG ANH KHOA</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Hàng 2: Ngày sinh, Giới tính, Quốc tịch -->
+                    <div class="detail-row">
+                        <div class="detail-item">
+                            <label>NGÀY SINH / DATE OF BIRTH</label>
+                            <p class="data-sub">17/02/2004</p>
+                        </div>
+                        <div class="detail-item">
+                            <label>GIỚI TÍNH / SEX</label>
+                            <p class="data-sub">NAM</p>
+                        </div>
+                        <div class="detail-item">
+                            <label>QUỐC TỊCH / NATIONALITY</label>
+                            <p class="data-sub">VIỆT NAM</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Hàng 3: Quê quán -->
+                    <div class="detail-row">
+                        <div class="detail-item full-width">
+                            <label>QUÊ QUÁN / ORIGIN PLACE</label>
+                            <p class="data-sub">TRUNG QUỐC </p>
+                        </div>
+                    </div>
+
+                    <!-- Hàng 4: Nơi thường trú -->
+                    <div class="detail-row">
+                        <div class="detail-item full-width">
+                            <label>NƠI THƯỜNG TRÚ / RESIDENCE</label>
+                            <p class="data-sub">SỐ NHÀ 02, HOÀI THÁI HIẾU, PHƯỜNG LONG CHÂU, TỈNH VĨNH LONG</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cccd-footer">
+                <p>BIỆT DANH: KHOABEST (NEON VERSION)</p>
+            </div>
         </div>
+        <!-- Thẻ CCCD Mới -->
     </div>
 </section>
 
 
 <section id="education">
+       <canvas id="particle-network-canvas"></canvas> 
     <h2 data-aos="fade-up">📚 Hành trình học tập</h2>
     <div class="timeline">
 
@@ -129,6 +192,7 @@
         
     </div>
 </section>
+
 
 <section id="gaming">
     <h2 data-aos="fade-up">🎮 Sở thích Gaming</h2>
